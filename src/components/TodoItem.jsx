@@ -36,7 +36,7 @@ function TodoItem({todo}) {
         />
 
         <button
-        className='inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-200 hover:bg-gray-50 shrink-0 disabled:opacity-30'
+        className='inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-200 hover:bg-gray-50 shrink-0 disabled:opacity-0'
         onClick={()=>{
             if(todo.completed) return
             if(isTodoEditable){
