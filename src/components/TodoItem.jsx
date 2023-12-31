@@ -29,7 +29,7 @@ function TodoItem({todo}) {
         />
 
         <input type="text" 
-        className={`border outline-none w-full bg-transparent rounded-lg ${isTodoEditable ? "border-black/10 bg-[#fafafa] px-2" : "border-transparent"}`}
+        className={`border outline-none w-full bg-transparent rounded-lg ${isTodoEditable ? "border-black/40 bg-[#f5d7f8] px-2" : "border-transparent"}`}
         value={todoMsg}
         onChange={(e) => setTodoMsg(e.target.value)}
         readOnly={!isTodoEditable}
@@ -45,7 +45,7 @@ function TodoItem({todo}) {
             else setIsTodoEditable((prev) => !prev)
         }}
         disabled={todo.completed}
-        > {isTodoEditable ? "💾" : "✏️"}
+        > {isTodoEditable ? "💾" : "📝"}
         </button>
 
         <button
